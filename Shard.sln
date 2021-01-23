@@ -21,6 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shard.Desktop.Core", "Deskt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DD5A36EB-029D-42A1-B29B-8B7F55A54222}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{19E6CD90-8CBB-4D3F-8DF5-FD3AA8CFF107}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{1f95ca60-0363-4663-8053-08f0c4e87f1d}*SharedItemsImports = 5
