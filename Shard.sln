@@ -5,14 +5,26 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shard.Core", "Shard.Core\Shard.Core.csproj", "{A588D1BA-C03C-40F7-83CD-C1523F40A3AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shard.Interfaces", "Shard.Interfaces\Shard.Interfaces.csproj", "{76AFC6BD-B9D4-4675-A2CF-5F8BF7C51BAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shard.Interfaces", "Shard.Interfaces\Shard.Interfaces.csproj", "{76AFC6BD-B9D4-4675-A2CF-5F8BF7C51BAE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4B59B4BA-E310-4494-AB07-13774DFD3772}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shard.CodingStandards", "Shared\Shard.CodingStandards\Shard.CodingStandards.shproj", "{8E5D4B7F-119E-4BB0-BEF7-668C64F6FDD9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shard.Desktop.Windows.WinApi", "Desktop\Windows\Shard.Desktop.Windows.WinApi\Shard.Desktop.Windows.WinApi.csproj", "{1F95CA60-0363-4663-8053-08F0C4E87F1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{B738E7EF-A6A0-4E43-BAC0-EFF90C369203}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{28DAC01F-439F-4726-9435-C84517C3DC5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shard.Desktop.Core", "Desktop\Core\Shard.Desktop.Core\Shard.Desktop.Core.csproj", "{682593CE-308D-43E2-B785-C0CC5B36FD3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DD5A36EB-029D-42A1-B29B-8B7F55A54222}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{1f95ca60-0363-4663-8053-08f0c4e87f1d}*SharedItemsImports = 5
+		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{682593ce-308d-43e2-b785-c0cc5b36fd3c}*SharedItemsImports = 5
 		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{76afc6bd-b9d4-4675-a2cf-5f8bf7c51bae}*SharedItemsImports = 5
 		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{8e5d4b7f-119e-4bb0-bef7-668c64f6fdd9}*SharedItemsImports = 13
 		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{a588d1ba-c03c-40f7-83cd-c1523f40a3ab}*SharedItemsImports = 5
@@ -30,12 +42,24 @@ Global
 		{76AFC6BD-B9D4-4675-A2CF-5F8BF7C51BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76AFC6BD-B9D4-4675-A2CF-5F8BF7C51BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76AFC6BD-B9D4-4675-A2CF-5F8BF7C51BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F95CA60-0363-4663-8053-08F0C4E87F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F95CA60-0363-4663-8053-08F0C4E87F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F95CA60-0363-4663-8053-08F0C4E87F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F95CA60-0363-4663-8053-08F0C4E87F1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682593CE-308D-43E2-B785-C0CC5B36FD3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682593CE-308D-43E2-B785-C0CC5B36FD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682593CE-308D-43E2-B785-C0CC5B36FD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682593CE-308D-43E2-B785-C0CC5B36FD3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8E5D4B7F-119E-4BB0-BEF7-668C64F6FDD9} = {4B59B4BA-E310-4494-AB07-13774DFD3772}
+		{1F95CA60-0363-4663-8053-08F0C4E87F1D} = {28DAC01F-439F-4726-9435-C84517C3DC5B}
+		{28DAC01F-439F-4726-9435-C84517C3DC5B} = {B738E7EF-A6A0-4E43-BAC0-EFF90C369203}
+		{682593CE-308D-43E2-B785-C0CC5B36FD3C} = {DD5A36EB-029D-42A1-B29B-8B7F55A54222}
+		{DD5A36EB-029D-42A1-B29B-8B7F55A54222} = {B738E7EF-A6A0-4E43-BAC0-EFF90C369203}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {561E6F92-9A8A-400C-B874-6955894CB1CA}
