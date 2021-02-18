@@ -5,6 +5,7 @@
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Shard.Core;
+using Shard.Interfaces.Managers;
 
 namespace Shard.TestFramework
 {
@@ -14,17 +15,34 @@ namespace Shard.TestFramework
     public class Bootstrap
     {
         /// <summary>
+        /// Singletone instance of <see cref="Bootstrap"/>.
+        /// </summary>
+        public static Bootstrap Instance { get; private set; }
+
+        /// <summary>
         /// Default method to call from the <see cref="AssemblyInitializeAttribute"/> implementation.
         /// </summary>
         /// <param name="testContext">Specified <see cref="TestContext"/>.</param>
-        protected static void OnAssemblyInitialize(TestContext testContext)
+        /// <param name="bootstrap"><see cref="Bootstrap"/> instance that will be available through the <see cref="Instance"/>.</param>
+        protected static void AssemblyInitialize(TestContext testContext, Bootstrap bootstrap)
         {
+            Instance = bootstrap;
+            Environment.Instance = bootstrap.CreateEnvironment();
+
+            bootstrap.RegisterManagers();
         }
 
         /// <summary>
-        /// Creates an <see cref="Environment"/> instance.
+        /// Creates an <see cref="Environment"/> instance for the <see cref="Environment.Instance"/>.
         /// </summary>
-        /// <returns>Specific environment.</returns>
-        protected Environment CreateInvironment() => new Environment();
+        /// <returns>Specific <see cref="Environment"/>.</returns>
+        protected virtual Environment CreateEnvironment() => new Environment();
+
+        /// <summary>
+        /// Attach all desired <see cref="IManager"/> to <see cref="Environment"/>.
+        /// </summary>
+        protected virtual void RegisterManagers()
+        {
+        }
     }
 }

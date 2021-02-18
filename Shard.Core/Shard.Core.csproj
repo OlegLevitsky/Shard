@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Managers\" />
+    <ProjectReference Include="..\Shard.Interfaces\Shard.Interfaces.csproj" />
   </ItemGroup>
 
   <Import Project="..\Shared\Shard.CodingStandards\Shard.CodingStandards.projitems" Label="Shared" />
