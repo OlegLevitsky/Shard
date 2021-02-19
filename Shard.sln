@@ -24,9 +24,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shard.Desktop.Windows.WinApi.Core", "Desktop\Windows\Shard.Desktop.Windows.WinApi.Core\Shard.Desktop.Windows.WinApi.Core.csproj", "{8839C105-D627-459C-B3BE-CCF7883AAEDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shard.Desktop.Windows.WinApi.Core", "Desktop\Windows\WinApi\Shard.Desktop.Windows.WinApi.Core\Shard.Desktop.Windows.WinApi.Core.csproj", "{8839C105-D627-459C-B3BE-CCF7883AAEDB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shard.Desktop.Windows.WinApi.UiTests", "Desktop\Windows\Shard.Desktop.Windows.WinApi.UiTests\Shard.Desktop.Windows.WinApi.UiTests.csproj", "{FF93AA2A-518D-4755-8FEB-2EC98565873B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shard.Desktop.Windows.WinApi.UiTests", "Desktop\Windows\WinApi\Shard.Desktop.Windows.WinApi.UiTests\Shard.Desktop.Windows.WinApi.UiTests.csproj", "{FF93AA2A-518D-4755-8FEB-2EC98565873B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinApi", "WinApi", "{02829827-C8AF-4963-B4AD-FA1289298D3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Appium", "Appium", "{B8C7B3DC-5A5D-4B37-AC0B-23C0F2038455}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shard.Desktop.Windows.Appium.Core", "Desktop\Windows\Appium\Shard.Desktop.Windows.Appium.Core\Shard.Desktop.Windows.Appium.Core.csproj", "{C9043275-C3B2-4B6E-B492-5DCEE22D6F6A}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -35,6 +41,7 @@ Global
 		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{8839c105-d627-459c-b3be-ccf7883aaedb}*SharedItemsImports = 5
 		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{8e5d4b7f-119e-4bb0-bef7-668c64f6fdd9}*SharedItemsImports = 13
 		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{a588d1ba-c03c-40f7-83cd-c1523f40a3ab}*SharedItemsImports = 5
+		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{c9043275-c3b2-4b6e-b492-5dcee22d6f6a}*SharedItemsImports = 5
 		Shared\Shard.CodingStandards\Shard.CodingStandards.projitems*{ff93aa2a-518d-4755-8feb-2ec98565873b}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +69,10 @@ Global
 		{FF93AA2A-518D-4755-8FEB-2EC98565873B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF93AA2A-518D-4755-8FEB-2EC98565873B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF93AA2A-518D-4755-8FEB-2EC98565873B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9043275-C3B2-4B6E-B492-5DCEE22D6F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9043275-C3B2-4B6E-B492-5DCEE22D6F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9043275-C3B2-4B6E-B492-5DCEE22D6F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9043275-C3B2-4B6E-B492-5DCEE22D6F6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,8 +82,11 @@ Global
 		{28DAC01F-439F-4726-9435-C84517C3DC5B} = {B738E7EF-A6A0-4E43-BAC0-EFF90C369203}
 		{682593CE-308D-43E2-B785-C0CC5B36FD3C} = {DD5A36EB-029D-42A1-B29B-8B7F55A54222}
 		{DD5A36EB-029D-42A1-B29B-8B7F55A54222} = {B738E7EF-A6A0-4E43-BAC0-EFF90C369203}
-		{8839C105-D627-459C-B3BE-CCF7883AAEDB} = {28DAC01F-439F-4726-9435-C84517C3DC5B}
-		{FF93AA2A-518D-4755-8FEB-2EC98565873B} = {28DAC01F-439F-4726-9435-C84517C3DC5B}
+		{8839C105-D627-459C-B3BE-CCF7883AAEDB} = {02829827-C8AF-4963-B4AD-FA1289298D3D}
+		{FF93AA2A-518D-4755-8FEB-2EC98565873B} = {02829827-C8AF-4963-B4AD-FA1289298D3D}
+		{02829827-C8AF-4963-B4AD-FA1289298D3D} = {28DAC01F-439F-4726-9435-C84517C3DC5B}
+		{B8C7B3DC-5A5D-4B37-AC0B-23C0F2038455} = {28DAC01F-439F-4726-9435-C84517C3DC5B}
+		{C9043275-C3B2-4B6E-B492-5DCEE22D6F6A} = {B8C7B3DC-5A5D-4B37-AC0B-23C0F2038455}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {561E6F92-9A8A-400C-B874-6955894CB1CA}

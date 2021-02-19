@@ -15,7 +15,7 @@ namespace Shard.TestFramework
     public class Bootstrap
     {
         /// <summary>
-        /// Singletone instance of <see cref="Bootstrap"/>.
+        /// Gets Singletone instance of <see cref="Bootstrap"/>.
         /// </summary>
         public static Bootstrap Instance { get; private set; }
 
